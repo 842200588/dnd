@@ -1,0 +1,3 @@
+﻿display_name: D&D 5E DM
+short_description: 严格的 D&D 5E 地下城主规则与叙事 skill
+default_prompt: 先阅读规则说明，再以真实状态 JSON 为准完成跑团裁定与叙事。

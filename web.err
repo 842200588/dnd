@@ -1,0 +1,163 @@
+[2m03:19:47[22m [31m[1m[vite][22m[39m [31mInternal server error: At least one <template> or <script> is required in a single file component. H:/work/test/dnd/apps/web/src/components/CharacterForm.vue[39m
+  Plugin: [35mvite:vue[39m
+  File: [36mH:/work/test/dnd/apps/web/src/components/CharacterForm.vue[39m
+      at Object.parse$1 [as parse] (H:\work\test\dnd\node_modules\@vue\compiler-sfc\dist\compiler-sfc.cjs.js:1894:7)
+      at createDescriptor (file:///H:/work/test/dnd/node_modules/@vitejs/plugin-vue/dist/index.mjs:71:43)
+      at handleHotUpdate (file:///H:/work/test/dnd/node_modules/@vitejs/plugin-vue/dist/index.mjs:2198:26)
+      at async handleHMRUpdate (file:///H:/work/test/dnd/node_modules/vite/dist/node/chunks/dep-D4NMHUTW.js:39242:33)
+      at async onHMRUpdate (file:///H:/work/test/dnd/node_modules/vite/dist/node/chunks/dep-D4NMHUTW.js:38634:7)
+      at async FSWatcher.<anonymous> (file:///H:/work/test/dnd/node_modules/vite/dist/node/chunks/dep-D4NMHUTW.js:38671:5)
+[2m03:20:05[22m [31m[1m[vite][22m[39m [31mInternal server error: Element is missing end tag.[39m
+  Plugin: [35mvite:vue[39m
+  File: [36mH:/work/test/dnd/apps/web/src/components/CharacterForm.vue[39m:31:27
+[33m  29 |  const labels = ABILITY_LABELS
+  30 |  const abilityKeys = ABILITY_KEYS
+  31 |  const abilityHints: Record<AbilityKey, string> = {
+     |                             ^
+  32 |    strength: '近战爆发与负重',
+  33 |    dexterity: '敏捷行动与潜行',[39m
+      at createCompilerError (H:\work\test\dnd\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:1378:17)
+      at emitError (H:\work\test\dnd\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:3014:5)
+      at Object.onend (H:\work\test\dnd\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:2616:7)
+      at Tokenizer.finish (H:\work\test\dnd\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:1246:14)
+      at Tokenizer.parse (H:\work\test\dnd\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:1224:10)
+      at Object.baseParse (H:\work\test\dnd\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:3053:13)
+      at Object.parse (H:\work\test\dnd\node_modules\@vue\compiler-dom\dist\compiler-dom.cjs.js:910:23)
+      at Object.parse$1 [as parse] (H:\work\test\dnd\node_modules\@vue\compiler-sfc\dist\compiler-sfc.cjs.js:1824:24)
+      at createDescriptor (file:///H:/work/test/dnd/node_modules/@vitejs/plugin-vue/dist/index.mjs:71:43)
+      at handleHotUpdate (file:///H:/work/test/dnd/node_modules/@vitejs/plugin-vue/dist/index.mjs:2198:26)
+[2m03:20:36[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Element is missing end tag.
+  Plugin: [35mvite:vue[39m
+  File: [36mH:/work/test/dnd/apps/web/src/components/CharacterForm.vue[39m:31:27
+[33m  29 |  const labels = ABILITY_LABELS
+  30 |  const abilityKeys = ABILITY_KEYS
+  31 |  const abilityHints: Record<AbilityKey, string> = {
+     |                             ^
+  32 |    strength: '近战爆发与负重',
+  33 |    dexterity: '敏捷行动与潜行',[39m
+[2m03:20:42[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Element is missing end tag.
+  Plugin: [35mvite:vue[39m
+  File: [36mH:/work/test/dnd/apps/web/src/components/CharacterForm.vue[39m:31:27
+[33m  29 |  const labels = ABILITY_LABELS
+  30 |  const abilityKeys = ABILITY_KEYS
+  31 |  const abilityHints: Record<AbilityKey, string> = {
+     |                             ^
+  32 |    strength: '近战爆发与负重',
+  33 |    dexterity: '敏捷行动与潜行',[39m
+[2m03:20:48[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Element is missing end tag.
+  Plugin: [35mvite:vue[39m
+  File: [36mH:/work/test/dnd/apps/web/src/components/CharacterForm.vue[39m:31:27
+[33m  29 |  const labels = ABILITY_LABELS
+  30 |  const abilityKeys = ABILITY_KEYS
+  31 |  const abilityHints: Record<AbilityKey, string> = {
+     |                             ^
+  32 |    strength: '近战爆发与负重',
+  33 |    dexterity: '敏捷行动与潜行',[39m
+[2m03:20:53[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Element is missing end tag.
+  Plugin: [35mvite:vue[39m
+  File: [36mH:/work/test/dnd/apps/web/src/components/CharacterForm.vue[39m:31:27
+[33m  29 |  const labels = ABILITY_LABELS
+  30 |  const abilityKeys = ABILITY_KEYS
+  31 |  const abilityHints: Record<AbilityKey, string> = {
+     |                             ^
+  32 |    strength: '近战爆发与负重',
+  33 |    dexterity: '敏捷行动与潜行',[39m
+[2m03:20:59[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Element is missing end tag.
+  Plugin: [35mvite:vue[39m
+  File: [36mH:/work/test/dnd/apps/web/src/components/CharacterForm.vue[39m:31:27
+[33m  29 |  const labels = ABILITY_LABELS
+  30 |  const abilityKeys = ABILITY_KEYS
+  31 |  const abilityHints: Record<AbilityKey, string> = {
+     |                             ^
+  32 |    strength: '近战爆发与负重',
+  33 |    dexterity: '敏捷行动与潜行',[39m
+[2m03:21:05[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Element is missing end tag.
+  Plugin: [35mvite:vue[39m
+  File: [36mH:/work/test/dnd/apps/web/src/components/CharacterForm.vue[39m:31:27
+[33m  29 |  const labels = ABILITY_LABELS
+  30 |  const abilityKeys = ABILITY_KEYS
+  31 |  const abilityHints: Record<AbilityKey, string> = {
+     |                             ^
+  32 |    strength: '近战爆发与负重',
+  33 |    dexterity: '敏捷行动与潜行',[39m
+[2m03:21:55[22m [31m[1m[vite][22m[39m [31mInternal server error: Element is missing end tag.[39m
+  Plugin: [35mvite:vue[39m
+  File: [36mH:/work/test/dnd/apps/web/src/components/CharacterForm.vue[39m:1:1
+[33m  1  |  <script setup lang="ts">
+     |   ^
+  2  |  [39m
+      at createCompilerError (H:\work\test\dnd\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:1378:17)
+      at emitError (H:\work\test\dnd\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:3014:5)
+      at Object.onend (H:\work\test\dnd\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:2616:7)
+      at Tokenizer.finish (H:\work\test\dnd\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:1246:14)
+      at Tokenizer.parse (H:\work\test\dnd\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:1224:10)
+      at Object.baseParse (H:\work\test\dnd\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:3053:13)
+      at Object.parse (H:\work\test\dnd\node_modules\@vue\compiler-dom\dist\compiler-dom.cjs.js:910:23)
+      at Object.parse$1 [as parse] (H:\work\test\dnd\node_modules\@vue\compiler-sfc\dist\compiler-sfc.cjs.js:1824:24)
+      at createDescriptor (file:///H:/work/test/dnd/node_modules/@vitejs/plugin-vue/dist/index.mjs:71:43)
+      at handleHotUpdate (file:///H:/work/test/dnd/node_modules/@vitejs/plugin-vue/dist/index.mjs:2198:26)
+[2m03:22:22[22m [31m[1m[vite][22m[39m [31mInternal server error: Element is missing end tag.[39m
+  Plugin: [35mvite:vue[39m
+  File: [36mH:/work/test/dnd/apps/web/src/components/CharacterForm.vue[39m:144:9
+[33m  142|          </div>
+  143|  
+  144|          <div class="field">
+     |           ^
+  145|  [39m
+      at createCompilerError (H:\work\test\dnd\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:1378:17)
+      at emitError (H:\work\test\dnd\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:3014:5)
+      at Object.onend (H:\work\test\dnd\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:2616:7)
+      at Tokenizer.finish (H:\work\test\dnd\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:1246:14)
+      at Tokenizer.parse (H:\work\test\dnd\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:1224:10)
+      at Object.baseParse (H:\work\test\dnd\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:3053:13)
+      at Object.parse (H:\work\test\dnd\node_modules\@vue\compiler-dom\dist\compiler-dom.cjs.js:910:23)
+      at Object.parse$1 [as parse] (H:\work\test\dnd\node_modules\@vue\compiler-sfc\dist\compiler-sfc.cjs.js:1824:24)
+      at createDescriptor (file:///H:/work/test/dnd/node_modules/@vitejs/plugin-vue/dist/index.mjs:71:43)
+      at handleHotUpdate (file:///H:/work/test/dnd/node_modules/@vitejs/plugin-vue/dist/index.mjs:2198:26)
+[2m03:22:55[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "../../../rules" from "src/components/CharacterForm.vue". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mH:/work/test/dnd/apps/web/src/components/CharacterForm.vue[39m:4:82
+[33m  2  |  import { computed, reactive } from "vue";
+  3  |  import { ElButton, ElCard, ElInput, ElMessage, ElOption, ElSelect, ElTag } from "element-plus";
+  4  |  import { ABILITY_KEYS, ABILITY_LABELS, getClassRule, getRaceRule, getRules } from "../../../rules";
+     |                                                                                     ^
+  5  |  import {
+  6  |    computeDerivedValues,[39m
+      at TransformPluginContext._formatLog (file:///H:/work/test/dnd/node_modules/vite/dist/node/chunks/dep-D4NMHUTW.js:42528:41)
+      at TransformPluginContext.error (file:///H:/work/test/dnd/node_modules/vite/dist/node/chunks/dep-D4NMHUTW.js:42525:16)
+      at normalizeUrl (file:///H:/work/test/dnd/node_modules/vite/dist/node/chunks/dep-D4NMHUTW.js:40504:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+      at async file:///H:/work/test/dnd/node_modules/vite/dist/node/chunks/dep-D4NMHUTW.js:40623:37
+      at async Promise.all (index 3)
+      at async TransformPluginContext.transform (file:///H:/work/test/dnd/node_modules/vite/dist/node/chunks/dep-D4NMHUTW.js:40550:7)
+      at async EnvironmentPluginContainer.transform (file:///H:/work/test/dnd/node_modules/vite/dist/node/chunks/dep-D4NMHUTW.js:42323:18)
+      at async loadAndTransform (file:///H:/work/test/dnd/node_modules/vite/dist/node/chunks/dep-D4NMHUTW.js:35739:27)
+      at async viteTransformMiddleware (file:///H:/work/test/dnd/node_modules/vite/dist/node/chunks/dep-D4NMHUTW.js:37254:24)
+[2m03:23:09[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "../../../rules" from "src/components/CharacterForm.vue". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mH:/work/test/dnd/apps/web/src/components/CharacterForm.vue[39m:4:82
+[33m  2  |  import { computed, reactive } from "vue";
+  3  |  import { ElButton, ElCard, ElInput, ElMessage, ElOption, ElSelect, ElTag } from "element-plus";
+  4  |  import { ABILITY_KEYS, ABILITY_LABELS, getClassRule, getRaceRule, getRules } from "../../../rules";
+     |                                                                                     ^
+  5  |  import {
+  6  |    computeDerivedValues,[39m
+      at TransformPluginContext._formatLog (file:///H:/work/test/dnd/node_modules/vite/dist/node/chunks/dep-D4NMHUTW.js:42528:41)
+      at TransformPluginContext.error (file:///H:/work/test/dnd/node_modules/vite/dist/node/chunks/dep-D4NMHUTW.js:42525:16)
+      at normalizeUrl (file:///H:/work/test/dnd/node_modules/vite/dist/node/chunks/dep-D4NMHUTW.js:40504:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+      at async file:///H:/work/test/dnd/node_modules/vite/dist/node/chunks/dep-D4NMHUTW.js:40623:37
+      at async Promise.all (index 3)
+      at async TransformPluginContext.transform (file:///H:/work/test/dnd/node_modules/vite/dist/node/chunks/dep-D4NMHUTW.js:40550:7)
+      at async EnvironmentPluginContainer.transform (file:///H:/work/test/dnd/node_modules/vite/dist/node/chunks/dep-D4NMHUTW.js:42323:18)
+      at async loadAndTransform (file:///H:/work/test/dnd/node_modules/vite/dist/node/chunks/dep-D4NMHUTW.js:35739:27)
+[2m03:23:09[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to resolve import "../../../rules" from "src/components/CharacterForm.vue". Does the file exist?
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mH:/work/test/dnd/apps/web/src/components/CharacterForm.vue[39m:4:82
+[33m  2  |  import { computed, reactive } from "vue";
+  3  |  import { ElButton, ElCard, ElInput, ElMessage, ElOption, ElSelect, ElTag } from "element-plus";
+  4  |  import { ABILITY_KEYS, ABILITY_LABELS, getClassRule, getRaceRule, getRules } from "../../../rules";
+     |                                                                                     ^
+  5  |  import {
+  6  |    computeDerivedValues,[39m
+^C^C

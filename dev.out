@@ -1,0 +1,540 @@
+
+> ai-dnd-mvp@0.1.0 dev
+> concurrently "npm run dev --workspace server" "npm run dev --workspace web"
+
+[0] 
+[0] > server@0.1.0 dev
+[0] > tsx watch src/index.ts
+[0] 
+[1] 
+[1] > web@0.1.0 dev
+[1] > vite
+[1] 
+[1] 
+[1]   [32m[1mVITE[22m v6.4.1[39m  [2mready in [0m[1m548[22m[2m[0m ms[22m
+[1] 
+[1]   [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5173[22m/[39m
+[1] [2m  [32m➜[39m  [1mNetwork[22m[2m: use [22m[1m--host[22m[2m to expose[22m
+[0] AI D&D server running on http://localhost:3000
+[0] 01:29:13 [tsx] change in ./src\lib\game-service.ts Restarting...
+[0] cAI D&D server running on http://localhost:3000
+[0] Error: Access denied for user 'root'@'localhost' (using password: NO)
+[0]     at Packet.asError (H:\work\test\dnd\node_modules\mysql2\lib\packets\packet.js:756:17)
+[0]     at ClientHandshake.execute (H:\work\test\dnd\node_modules\mysql2\lib\commands\command.js:29:26)
+[0]     at PoolConnection.handlePacket (H:\work\test\dnd\node_modules\mysql2\lib\base\connection.js:508:34)
+[0]     at PacketParser.onPacket (H:\work\test\dnd\node_modules\mysql2\lib\base\connection.js:93:12)
+[0]     at PacketParser.executeStart (H:\work\test\dnd\node_modules\mysql2\lib\packet_parser.js:75:16)
+[0]     at Socket.<anonymous> (H:\work\test\dnd\node_modules\mysql2\lib\base\connection.js:100:25)
+[0]     at Socket.emit (node:events:519:28)
+[0]     at addChunk (node:internal/streams/readable:561:12)
+[0]     at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+[0]     at Readable.push (node:internal/streams/readable:392:5) {
+[0]   code: 'ER_ACCESS_DENIED_ERROR',
+[0]   errno: 1045,
+[0]   sqlState: '28000',
+[0]   sqlMessage: "Access denied for user 'root'@'localhost' (using password: NO)",
+[0]   sql: undefined
+[0] }
+[0] Error: Access denied for user 'root'@'localhost' (using password: NO)
+[0]     at Packet.asError (H:\work\test\dnd\node_modules\mysql2\lib\packets\packet.js:756:17)
+[0]     at ClientHandshake.execute (H:\work\test\dnd\node_modules\mysql2\lib\commands\command.js:29:26)
+[0]     at PoolConnection.handlePacket (H:\work\test\dnd\node_modules\mysql2\lib\base\connection.js:508:34)
+[0]     at PacketParser.onPacket (H:\work\test\dnd\node_modules\mysql2\lib\base\connection.js:93:12)
+[0]     at PacketParser.executeStart (H:\work\test\dnd\node_modules\mysql2\lib\packet_parser.js:75:16)
+[0]     at Socket.<anonymous> (H:\work\test\dnd\node_modules\mysql2\lib\base\connection.js:100:25)
+[0]     at Socket.emit (node:events:519:28)
+[0]     at addChunk (node:internal/streams/readable:561:12)
+[0]     at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+[0]     at Readable.push (node:internal/streams/readable:392:5) {
+[0]   code: 'ER_ACCESS_DENIED_ERROR',
+[0]   errno: 1045,
+[0]   sqlState: '28000',
+[0]   sqlMessage: "Access denied for user 'root'@'localhost' (using password: NO)",
+[0]   sql: undefined
+[0] }
+[0] Error: Access denied for user 'root'@'localhost' (using password: NO)
+[0]     at Packet.asError (H:\work\test\dnd\node_modules\mysql2\lib\packets\packet.js:756:17)
+[0]     at ClientHandshake.execute (H:\work\test\dnd\node_modules\mysql2\lib\commands\command.js:29:26)
+[0]     at PoolConnection.handlePacket (H:\work\test\dnd\node_modules\mysql2\lib\base\connection.js:508:34)
+[0]     at PacketParser.onPacket (H:\work\test\dnd\node_modules\mysql2\lib\base\connection.js:93:12)
+[0]     at PacketParser.executeStart (H:\work\test\dnd\node_modules\mysql2\lib\packet_parser.js:75:16)
+[0]     at Socket.<anonymous> (H:\work\test\dnd\node_modules\mysql2\lib\base\connection.js:100:25)
+[0]     at Socket.emit (node:events:519:28)
+[0]     at addChunk (node:internal/streams/readable:561:12)
+[0]     at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+[0]     at Readable.push (node:internal/streams/readable:392:5) {
+[0]   code: 'ER_ACCESS_DENIED_ERROR',
+[0]   errno: 1045,
+[0]   sqlState: '28000',
+[0]   sqlMessage: "Access denied for user 'root'@'localhost' (using password: NO)",
+[0]   sql: undefined
+[0] }
+[0] 01:57:27 [tsx] change in ./src\lib\game-service.ts Restarting...
+[0] cAI D&D server running on http://localhost:3000
+[1] [2m01:58:22[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/main.ts[22m
+[1] [2m01:58:28[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32m✨ new dependencies optimized: [33melement-plus[32m[39m
+[1] [2m01:58:28[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32m✨ optimized dependencies changed. reloading[39m
+[1] [2m02:00:09[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/CharacterSheet.vue[22m
+[1] [2m02:00:09[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/ChatPanel.vue[22m
+[1] [2m02:00:09[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/SettingsModal.vue[22m
+[1] [2m02:00:09[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/HomePage.vue[22m
+[1] [2m02:00:09[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/CharacterForm.vue[22m
+[1] [2m02:00:42[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/styles/main.css[22m
+[1] [2m02:01:16[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/router/index.js[22m
+[1] [2m02:01:16[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/HomePage.vue[22m
+[1] [2m02:01:16[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/HomePage.vue[22m
+[1] [2m02:02:11[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/CharacterForm.vue[22m
+[1] [2m02:02:12[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/CharacterForm.vue[22m
+[1] [2m02:02:19[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/CharacterForm.vue[22m
+[1] [2m02:18:30[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mH:/work/test/dnd/shared/dnd5e.json[22m
+[0] 02:18:30 [tsx] change in ./..\..\shared\dnd5e.json Restarting...
+[0] cAI D&D server running on http://localhost:3000
+[1] [2m02:19:18[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/lib/dnd.ts[22m
+[1] [2m02:19:18[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/CharacterSheet.vue[22m
+[1] [2m02:19:18[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/SettingsModal.vue[22m
+[1] [2m02:20:41[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/CharacterForm.vue[22m
+[1] [2m02:21:25[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/ChatPanel.vue[22m
+[1] [2m02:21:25[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/HomePage.vue[22m
+[1] [2m02:22:29[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/styles/main.css[22m
+[1] [2m02:22:38[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/CharacterForm.vue, /src/components/CharacterSheet.vue[22m
+[1] [2m02:25:09[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/CharacterForm.vue[22m
+[0] Error: Access denied for user 'root'@'localhost' (using password: NO)
+[0]     at Packet.asError (H:\work\test\dnd\node_modules\mysql2\lib\packets\packet.js:756:17)
+[0]     at ClientHandshake.execute (H:\work\test\dnd\node_modules\mysql2\lib\commands\command.js:29:26)
+[0]     at PoolConnection.handlePacket (H:\work\test\dnd\node_modules\mysql2\lib\base\connection.js:508:34)
+[0]     at PacketParser.onPacket (H:\work\test\dnd\node_modules\mysql2\lib\base\connection.js:93:12)
+[0]     at PacketParser.executeStart (H:\work\test\dnd\node_modules\mysql2\lib\packet_parser.js:75:16)
+[0]     at Socket.<anonymous> (H:\work\test\dnd\node_modules\mysql2\lib\base\connection.js:100:25)
+[0]     at Socket.emit (node:events:519:28)
+[0]     at addChunk (node:internal/streams/readable:561:12)
+[0]     at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+[0]     at Readable.push (node:internal/streams/readable:392:5) {
+[0]   code: 'ER_ACCESS_DENIED_ERROR',
+[0]   errno: 1045,
+[0]   sqlState: '28000',
+[0]   sqlMessage: "Access denied for user 'root'@'localhost' (using password: NO)",
+[0]   sql: undefined
+[0] }
+[0] Error: Access denied for user 'root'@'localhost' (using password: NO)
+[0]     at Packet.asError (H:\work\test\dnd\node_modules\mysql2\lib\packets\packet.js:756:17)
+[0]     at ClientHandshake.execute (H:\work\test\dnd\node_modules\mysql2\lib\commands\command.js:29:26)
+[0]     at PoolConnection.handlePacket (H:\work\test\dnd\node_modules\mysql2\lib\base\connection.js:508:34)
+[0]     at PacketParser.onPacket (H:\work\test\dnd\node_modules\mysql2\lib\base\connection.js:93:12)
+[0]     at PacketParser.executeStart (H:\work\test\dnd\node_modules\mysql2\lib\packet_parser.js:75:16)
+[0]     at Socket.<anonymous> (H:\work\test\dnd\node_modules\mysql2\lib\base\connection.js:100:25)
+[0]     at Socket.emit (node:events:519:28)
+[0]     at addChunk (node:internal/streams/readable:561:12)
+[0]     at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+[0]     at Readable.push (node:internal/streams/readable:392:5) {
+[0]   code: 'ER_ACCESS_DENIED_ERROR',
+[0]   errno: 1045,
+[0]   sqlState: '28000',
+[0]   sqlMessage: "Access denied for user 'root'@'localhost' (using password: NO)",
+[0]   sql: undefined
+[0] }
+[1] [2m02:34:43[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/styles/main.css[22m
+[1] [2m02:34:43[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/HomePage.vue[22m
+[1] [2m02:34:43[22m [31m[1m[vite][22m[39m [31mInternal server error: At least one <template> or <script> is required in a single file component. H:/work/test/dnd/apps/web/src/pages/HomePage.vue[39m
+[1]   Plugin: [35mvite:vue[39m
+[1]   File: [36mH:/work/test/dnd/apps/web/src/pages/HomePage.vue[39m
+[1]       at Object.parse$1 [as parse] (H:\work\test\dnd\node_modules\@vue\compiler-sfc\dist\compiler-sfc.cjs.js:1894:7)
+[1]       at createDescriptor (file:///H:/work/test/dnd/node_modules/@vitejs/plugin-vue/dist/index.mjs:71:43)
+[1]       at handleHotUpdate (file:///H:/work/test/dnd/node_modules/@vitejs/plugin-vue/dist/index.mjs:2198:26)
+[1]       at async handleHMRUpdate (file:///H:/work/test/dnd/node_modules/vite/dist/node/chunks/dep-D4NMHUTW.js:39242:33)
+[1]       at async onHMRUpdate (file:///H:/work/test/dnd/node_modules/vite/dist/node/chunks/dep-D4NMHUTW.js:38634:7)
+[1]       at async FSWatcher.<anonymous> (file:///H:/work/test/dnd/node_modules/vite/dist/node/chunks/dep-D4NMHUTW.js:38671:5)
+[1] [2m02:34:43[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/SettingsModal.vue[22m
+[1] [2m02:35:52[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/styles/main.css[22m
+[1] [2m02:35:52[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/HomePage.vue[22m
+[0] Error: Access denied for user 'root'@'localhost' (using password: NO)
+[0]     at Packet.asError (H:\work\test\dnd\node_modules\mysql2\lib\packets\packet.js:756:17)
+[0]     at ClientHandshake.execute (H:\work\test\dnd\node_modules\mysql2\lib\commands\command.js:29:26)
+[0]     at PoolConnection.handlePacket (H:\work\test\dnd\node_modules\mysql2\lib\base\connection.js:508:34)
+[0]     at PacketParser.onPacket (H:\work\test\dnd\node_modules\mysql2\lib\base\connection.js:93:12)
+[0]     at PacketParser.executeStart (H:\work\test\dnd\node_modules\mysql2\lib\packet_parser.js:75:16)
+[0]     at Socket.<anonymous> (H:\work\test\dnd\node_modules\mysql2\lib\base\connection.js:100:25)
+[0]     at Socket.emit (node:events:519:28)
+[0]     at addChunk (node:internal/streams/readable:561:12)
+[0]     at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+[0]     at Readable.push (node:internal/streams/readable:392:5) {
+[0]   code: 'ER_ACCESS_DENIED_ERROR',
+[0]   errno: 1045,
+[0]   sqlState: '28000',
+[0]   sqlMessage: "Access denied for user 'root'@'localhost' (using password: NO)",
+[0]   sql: undefined
+[0] }
+[0] Error: Access denied for user 'root'@'localhost' (using password: NO)
+[0]     at Packet.asError (H:\work\test\dnd\node_modules\mysql2\lib\packets\packet.js:756:17)
+[0]     at ClientHandshake.execute (H:\work\test\dnd\node_modules\mysql2\lib\commands\command.js:29:26)
+[0]     at PoolConnection.handlePacket (H:\work\test\dnd\node_modules\mysql2\lib\base\connection.js:508:34)
+[0]     at PacketParser.onPacket (H:\work\test\dnd\node_modules\mysql2\lib\base\connection.js:93:12)
+[0]     at PacketParser.executeStart (H:\work\test\dnd\node_modules\mysql2\lib\packet_parser.js:75:16)
+[0]     at Socket.<anonymous> (H:\work\test\dnd\node_modules\mysql2\lib\base\connection.js:100:25)
+[0]     at Socket.emit (node:events:519:28)
+[0]     at addChunk (node:internal/streams/readable:561:12)
+[0]     at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+[0]     at Readable.push (node:internal/streams/readable:392:5) {
+[0]   code: 'ER_ACCESS_DENIED_ERROR',
+[0]   errno: 1045,
+[0]   sqlState: '28000',
+[0]   sqlMessage: "Access denied for user 'root'@'localhost' (using password: NO)",
+[0]   sql: undefined
+[0] }
+[1] [2m02:42:14[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/styles/main.css[22m
+[0] 02:42:14 [tsx] change in ./src\index.ts Restarting...
+[0] cAI D&D server running on http://localhost:3000
+[1] [2m02:45:58[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/styles/main.css[22m
+[1] [2m02:45:58[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/CharacterForm.vue[22m
+[0] Error: Access denied for user 'root'@'localhost' (using password: NO)
+[0]     at Packet.asError (H:\work\test\dnd\node_modules\mysql2\lib\packets\packet.js:756:17)
+[0]     at ClientHandshake.execute (H:\work\test\dnd\node_modules\mysql2\lib\commands\command.js:29:26)
+[0]     at PoolConnection.handlePacket (H:\work\test\dnd\node_modules\mysql2\lib\base\connection.js:508:34)
+[0]     at PacketParser.onPacket (H:\work\test\dnd\node_modules\mysql2\lib\base\connection.js:93:12)
+[0]     at PacketParser.executeStart (H:\work\test\dnd\node_modules\mysql2\lib\packet_parser.js:75:16)
+[0]     at Socket.<anonymous> (H:\work\test\dnd\node_modules\mysql2\lib\base\connection.js:100:25)
+[0]     at Socket.emit (node:events:519:28)
+[0]     at addChunk (node:internal/streams/readable:561:12)
+[0]     at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+[0]     at Readable.push (node:internal/streams/readable:392:5) {
+[0]   code: 'ER_ACCESS_DENIED_ERROR',
+[0]   errno: 1045,
+[0]   sqlState: '28000',
+[0]   sqlMessage: "Access denied for user 'root'@'localhost' (using password: NO)",
+[0]   sql: undefined
+[0] }
+[0] Error: Access denied for user 'root'@'localhost' (using password: NO)
+[0]     at Packet.asError (H:\work\test\dnd\node_modules\mysql2\lib\packets\packet.js:756:17)
+[0]     at ClientHandshake.execute (H:\work\test\dnd\node_modules\mysql2\lib\commands\command.js:29:26)
+[0]     at PoolConnection.handlePacket (H:\work\test\dnd\node_modules\mysql2\lib\base\connection.js:508:34)
+[0]     at PacketParser.onPacket (H:\work\test\dnd\node_modules\mysql2\lib\base\connection.js:93:12)
+[0]     at PacketParser.executeStart (H:\work\test\dnd\node_modules\mysql2\lib\packet_parser.js:75:16)
+[0]     at Socket.<anonymous> (H:\work\test\dnd\node_modules\mysql2\lib\base\connection.js:100:25)
+[0]     at Socket.emit (node:events:519:28)
+[0]     at addChunk (node:internal/streams/readable:561:12)
+[0]     at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+[0]     at Readable.push (node:internal/streams/readable:392:5) {
+[0]   code: 'ER_ACCESS_DENIED_ERROR',
+[0]   errno: 1045,
+[0]   sqlState: '28000',
+[0]   sqlMessage: "Access denied for user 'root'@'localhost' (using password: NO)",
+[0]   sql: undefined
+[0] }
+[0] Error: Access denied for user 'root'@'localhost' (using password: NO)
+[0]     at Packet.asError (H:\work\test\dnd\node_modules\mysql2\lib\packets\packet.js:756:17)
+[0]     at ClientHandshake.execute (H:\work\test\dnd\node_modules\mysql2\lib\commands\command.js:29:26)
+[0]     at PoolConnection.handlePacket (H:\work\test\dnd\node_modules\mysql2\lib\base\connection.js:508:34)
+[0]     at PacketParser.onPacket (H:\work\test\dnd\node_modules\mysql2\lib\base\connection.js:93:12)
+[0]     at PacketParser.executeStart (H:\work\test\dnd\node_modules\mysql2\lib\packet_parser.js:75:16)
+[0]     at Socket.<anonymous> (H:\work\test\dnd\node_modules\mysql2\lib\base\connection.js:100:25)
+[0]     at Socket.emit (node:events:519:28)
+[0]     at addChunk (node:internal/streams/readable:561:12)
+[0]     at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+[0]     at Readable.push (node:internal/streams/readable:392:5) {
+[0]   code: 'ER_ACCESS_DENIED_ERROR',
+[0]   errno: 1045,
+[0]   sqlState: '28000',
+[0]   sqlMessage: "Access denied for user 'root'@'localhost' (using password: NO)",
+[0]   sql: undefined
+[0] }
+[0] Error: Access denied for user 'root'@'localhost' (using password: NO)
+[0]     at Packet.asError (H:\work\test\dnd\node_modules\mysql2\lib\packets\packet.js:756:17)
+[0]     at ClientHandshake.execute (H:\work\test\dnd\node_modules\mysql2\lib\commands\command.js:29:26)
+[0]     at PoolConnection.handlePacket (H:\work\test\dnd\node_modules\mysql2\lib\base\connection.js:508:34)
+[0]     at PacketParser.onPacket (H:\work\test\dnd\node_modules\mysql2\lib\base\connection.js:93:12)
+[0]     at PacketParser.executeStart (H:\work\test\dnd\node_modules\mysql2\lib\packet_parser.js:75:16)
+[0]     at Socket.<anonymous> (H:\work\test\dnd\node_modules\mysql2\lib\base\connection.js:100:25)
+[0]     at Socket.emit (node:events:519:28)
+[0]     at addChunk (node:internal/streams/readable:561:12)
+[0]     at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+[0]     at Readable.push (node:internal/streams/readable:392:5) {
+[0]   code: 'ER_ACCESS_DENIED_ERROR',
+[0]   errno: 1045,
+[0]   sqlState: '28000',
+[0]   sqlMessage: "Access denied for user 'root'@'localhost' (using password: NO)",
+[0]   sql: undefined
+[0] }
+[0] Error: Access denied for user 'root'@'localhost' (using password: NO)
+[0]     at Packet.asError (H:\work\test\dnd\node_modules\mysql2\lib\packets\packet.js:756:17)
+[0]     at ClientHandshake.execute (H:\work\test\dnd\node_modules\mysql2\lib\commands\command.js:29:26)
+[0]     at PoolConnection.handlePacket (H:\work\test\dnd\node_modules\mysql2\lib\base\connection.js:508:34)
+[0]     at PacketParser.onPacket (H:\work\test\dnd\node_modules\mysql2\lib\base\connection.js:93:12)
+[0]     at PacketParser.executeStart (H:\work\test\dnd\node_modules\mysql2\lib\packet_parser.js:75:16)
+[0]     at Socket.<anonymous> (H:\work\test\dnd\node_modules\mysql2\lib\base\connection.js:100:25)
+[0]     at Socket.emit (node:events:519:28)
+[0]     at addChunk (node:internal/streams/readable:561:12)
+[0]     at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+[0]     at Readable.push (node:internal/streams/readable:392:5) {
+[0]   code: 'ER_ACCESS_DENIED_ERROR',
+[0]   errno: 1045,
+[0]   sqlState: '28000',
+[0]   sqlMessage: "Access denied for user 'root'@'localhost' (using password: NO)",
+[0]   sql: undefined
+[0] }
+[1] [2m02:54:12[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/styles/main.css[22m
+[1] [2m02:54:13[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/styles/main.css[22m
+[1] [2m02:54:23[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/styles/main.css[22m
+[1] [2m02:54:25[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/styles/main.css[22m
+[1] [2m02:54:28[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/styles/main.css[22m
+[1] npm error Lifecycle script `dev` failed with error:
+[1] npm error code 1
+[1] npm error path H:\work\test\dnd\apps\web
+[1] npm error workspace web@0.1.0
+[1] npm error location H:\work\test\dnd\apps\web
+[1] npm error command failed
+[1] npm error command C:\WINDOWS\system32\cmd.exe /d /s /c vite
+[1] npm run dev --workspace web exited with code 1
+[0] 02:59:30 [tsx] change in ./src\lib\dnd-data.ts Rerunning...
+[0] cAI D&D server running on http://localhost:3000
+[0] node:events:497
+[0]       throw er; // Unhandled 'error' event
+[0]       ^
+[0] 
+[0] Error: listen EADDRINUSE: address already in use :::3000
+[0]     at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+[0]     at listenInCluster (node:net:1997:12)
+[0]     at Server.listen (node:net:2102:7)
+[0]     at serve (file:///H:/work/test/dnd/node_modules/@hono/node-server/dist/index.mjs:581:10)
+[0]     at <anonymous> (H:\work\test\dnd\apps\server\src\index.ts:28:1)
+[0]     at ModuleJob.run (node:internal/modules/esm/module_job:345:25)
+[0]     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+[0]     at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)
+[0] Emitted 'error' event on Server instance at:
+[0]     at emitErrorNT (node:net:1976:8)
+[0]     at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+[0]   code: 'EADDRINUSE',
+[0]   errno: -4091,
+[0]   syscall: 'listen',
+[0]   address: '::',
+[0]   port: 3000
+[0] }
+[0] 
+[0] Node.js v22.20.0
+[0] 02:59:38 [tsx] change in ./src\lib\game-service.ts Rerunning...
+[0] c
+[0] node:internal/modules/run_main:123
+[0]     triggerUncaughtException(
+[0]     ^
+[0] Error [TransformError]: Transform failed with 1 error:
+[0] H:\work\test\dnd\apps\server\src\lib\game-service.ts:109:5: ERROR: Expected "]" but found "SELECT"
+[0]     at failureErrorWithLog (H:\work\test\dnd\node_modules\esbuild\lib\main.js:1467:15)
+[0]     at H:\work\test\dnd\node_modules\esbuild\lib\main.js:736:50
+[0]     at responseCallbacks.<computed> (H:\work\test\dnd\node_modules\esbuild\lib\main.js:603:9)
+[0]     at handleIncomingPacket (H:\work\test\dnd\node_modules\esbuild\lib\main.js:658:12)
+[0]     at Socket.readFromStdout (H:\work\test\dnd\node_modules\esbuild\lib\main.js:581:7)
+[0]     at Socket.emit (node:events:519:28)
+[0]     at addChunk (node:internal/streams/readable:561:12)
+[0]     at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+[0]     at Readable.push (node:internal/streams/readable:392:5)
+[0]     at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+[0] 
+[0] Node.js v22.20.0
+[0] 03:01:18 [tsx] change in ./src\lib\game-service.ts Rerunning...
+[0] cAI D&D server running on http://localhost:3000
+[0] node:events:497
+[0]       throw er; // Unhandled 'error' event
+[0]       ^
+[0] 
+[0] Error: listen EADDRINUSE: address already in use :::3000
+[0]     at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+[0]     at listenInCluster (node:net:1997:12)
+[0]     at Server.listen (node:net:2102:7)
+[0]     at serve (file:///H:/work/test/dnd/node_modules/@hono/node-server/dist/index.mjs:581:10)
+[0]     at <anonymous> (H:\work\test\dnd\apps\server\src\index.ts:28:1)
+[0]     at ModuleJob.run (node:internal/modules/esm/module_job:345:25)
+[0]     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+[0]     at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)
+[0] Emitted 'error' event on Server instance at:
+[0]     at emitErrorNT (node:net:1976:8)
+[0]     at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+[0]   code: 'EADDRINUSE',
+[0]   errno: -4091,
+[0]   syscall: 'listen',
+[0]   address: '::',
+[0]   port: 3000
+[0] }
+[0] 
+[0] Node.js v22.20.0
+[0] 03:02:48 [tsx] change in ./src\lib\dnd-data.ts Rerunning...
+[0] cAI D&D server running on http://localhost:3000
+[0] node:events:497
+[0]       throw er; // Unhandled 'error' event
+[0]       ^
+[0] 
+[0] Error: listen EADDRINUSE: address already in use :::3000
+[0]     at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+[0]     at listenInCluster (node:net:1997:12)
+[0]     at Server.listen (node:net:2102:7)
+[0]     at serve (file:///H:/work/test/dnd/node_modules/@hono/node-server/dist/index.mjs:581:10)
+[0]     at <anonymous> (H:\work\test\dnd\apps\server\src\index.ts:28:1)
+[0]     at ModuleJob.run (node:internal/modules/esm/module_job:345:25)
+[0]     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+[0]     at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)
+[0] Emitted 'error' event on Server instance at:
+[0]     at emitErrorNT (node:net:1976:8)
+[0]     at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+[0]   code: 'EADDRINUSE',
+[0]   errno: -4091,
+[0]   syscall: 'listen',
+[0]   address: '::',
+[0]   port: 3000
+[0] }
+[0] 
+[0] Node.js v22.20.0
+[0] 03:08:01 [tsx] change in ./src\routes\api.ts Rerunning...
+[0] cAI D&D server running on http://localhost:3000
+[0] node:events:497
+[0]       throw er; // Unhandled 'error' event
+[0]       ^
+[0] 
+[0] Error: listen EADDRINUSE: address already in use :::3000
+[0]     at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+[0]     at listenInCluster (node:net:1997:12)
+[0]     at Server.listen (node:net:2102:7)
+[0]     at serve (file:///H:/work/test/dnd/node_modules/@hono/node-server/dist/index.mjs:581:10)
+[0]     at <anonymous> (H:\work\test\dnd\apps\server\src\index.ts:28:1)
+[0]     at ModuleJob.run (node:internal/modules/esm/module_job:345:25)
+[0]     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+[0]     at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)
+[0] Emitted 'error' event on Server instance at:
+[0]     at emitErrorNT (node:net:1976:8)
+[0]     at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+[0]   code: 'EADDRINUSE',
+[0]   errno: -4091,
+[0]   syscall: 'listen',
+[0]   address: '::',
+[0]   port: 3000
+[0] }
+[0] 
+[0] Node.js v22.20.0
+[0] 03:11:47 [tsx] change in ./src\routes\api.ts Rerunning...
+[0] cAI D&D server running on http://localhost:3000
+[0] node:events:497
+[0]       throw er; // Unhandled 'error' event
+[0]       ^
+[0] 
+[0] Error: listen EADDRINUSE: address already in use :::3000
+[0]     at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+[0]     at listenInCluster (node:net:1997:12)
+[0]     at Server.listen (node:net:2102:7)
+[0]     at serve (file:///H:/work/test/dnd/node_modules/@hono/node-server/dist/index.mjs:581:10)
+[0]     at <anonymous> (H:\work\test\dnd\apps\server\src\index.ts:28:1)
+[0]     at ModuleJob.run (node:internal/modules/esm/module_job:345:25)
+[0]     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+[0]     at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)
+[0] Emitted 'error' event on Server instance at:
+[0]     at emitErrorNT (node:net:1976:8)
+[0]     at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+[0]   code: 'EADDRINUSE',
+[0]   errno: -4091,
+[0]   syscall: 'listen',
+[0]   address: '::',
+[0]   port: 3000
+[0] }
+[0] 
+[0] Node.js v22.20.0
+[0] 03:12:47 [tsx] change in ./src\index.ts Rerunning...
+[0] cAI D&D server running on http://localhost:3000
+[0] node:events:497
+[0]       throw er; // Unhandled 'error' event
+[0]       ^
+[0] 
+[0] Error: listen EADDRINUSE: address already in use :::3000
+[0]     at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+[0]     at listenInCluster (node:net:1997:12)
+[0]     at Server.listen (node:net:2102:7)
+[0]     at serve (file:///H:/work/test/dnd/node_modules/@hono/node-server/dist/index.mjs:581:10)
+[0]     at <anonymous> (H:\work\test\dnd\apps\server\src\index.ts:28:1)
+[0]     at ModuleJob.run (node:internal/modules/esm/module_job:345:25)
+[0]     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+[0]     at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)
+[0] Emitted 'error' event on Server instance at:
+[0]     at emitErrorNT (node:net:1976:8)
+[0]     at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+[0]   code: 'EADDRINUSE',
+[0]   errno: -4091,
+[0]   syscall: 'listen',
+[0]   address: '::',
+[0]   port: 3000
+[0] }
+[0] 
+[0] Node.js v22.20.0
+[0] 03:15:02 [tsx] change in ./src\lib\db.ts Rerunning...
+[0] cAI D&D server running on http://localhost:3000
+[0] node:events:497
+[0]       throw er; // Unhandled 'error' event
+[0]       ^
+[0] 
+[0] Error: listen EADDRINUSE: address already in use :::3000
+[0]     at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+[0]     at listenInCluster (node:net:1997:12)
+[0]     at Server.listen (node:net:2102:7)
+[0]     at serve (file:///H:/work/test/dnd/node_modules/@hono/node-server/dist/index.mjs:581:10)
+[0]     at <anonymous> (H:\work\test\dnd\apps\server\src\index.ts:28:1)
+[0]     at ModuleJob.run (node:internal/modules/esm/module_job:345:25)
+[0]     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+[0]     at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)
+[0] Emitted 'error' event on Server instance at:
+[0]     at emitErrorNT (node:net:1976:8)
+[0]     at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+[0]   code: 'EADDRINUSE',
+[0]   errno: -4091,
+[0]   syscall: 'listen',
+[0]   address: '::',
+[0]   port: 3000
+[0] }
+[0] 
+[0] Node.js v22.20.0
+[0] 03:31:50 [tsx] change in ./src\lib\dnd-rules.ts Rerunning...
+[0] cAI D&D server running on http://localhost:3000
+[0] node:events:497
+[0]       throw er; // Unhandled 'error' event
+[0]       ^
+[0] 
+[0] Error: listen EADDRINUSE: address already in use :::3000
+[0]     at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+[0]     at listenInCluster (node:net:1997:12)
+[0]     at Server.listen (node:net:2102:7)
+[0]     at serve (file:///H:/work/test/dnd/node_modules/@hono/node-server/dist/index.mjs:581:10)
+[0]     at <anonymous> (H:\work\test\dnd\apps\server\src\index.ts:28:1)
+[0]     at ModuleJob.run (node:internal/modules/esm/module_job:345:25)
+[0]     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+[0]     at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)
+[0] Emitted 'error' event on Server instance at:
+[0]     at emitErrorNT (node:net:1976:8)
+[0]     at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+[0]   code: 'EADDRINUSE',
+[0]   errno: -4091,
+[0]   syscall: 'listen',
+[0]   address: '::',
+[0]   port: 3000
+[0] }
+[0] 
+[0] Node.js v22.20.0
+[0] 03:32:45 [tsx] change in ./src\lib\dnd-rules.ts Rerunning...
+[0] cAI D&D server running on http://localhost:3000
+[0] node:events:497
+[0]       throw er; // Unhandled 'error' event
+[0]       ^
+[0] 
+[0] Error: listen EADDRINUSE: address already in use :::3000
+[0]     at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+[0]     at listenInCluster (node:net:1997:12)
+[0]     at Server.listen (node:net:2102:7)
+[0]     at serve (file:///H:/work/test/dnd/node_modules/@hono/node-server/dist/index.mjs:581:10)
+[0]     at <anonymous> (H:\work\test\dnd\apps\server\src\index.ts:28:1)
+[0]     at ModuleJob.run (node:internal/modules/esm/module_job:345:25)
+[0]     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+[0]     at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)
+[0] Emitted 'error' event on Server instance at:
+[0]     at emitErrorNT (node:net:1976:8)
+[0]     at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+[0]   code: 'EADDRINUSE',
+[0]   errno: -4091,
+[0]   syscall: 'listen',
+[0]   address: '::',
+[0]   port: 3000
+[0] }
+[0] 
+[0] Node.js v22.20.0
+[0] ^C
+[0] npm run dev --workspace server exited with code 3221225786

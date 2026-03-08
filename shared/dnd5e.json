@@ -1,0 +1,867 @@
+{
+  "pointBuy": {
+    "budget": 27,
+    "baseScore": 8,
+    "minScore": 8,
+    "maxScore": 15,
+    "costs": {
+      "8": 0,
+      "9": 1,
+      "10": 2,
+      "11": 3,
+      "12": 4,
+      "13": 5,
+      "14": 7,
+      "15": 9
+    }
+  },
+  "skillLabels": {
+    "Acrobatics": "特技",
+    "Animal Handling": "驯兽",
+    "Arcana": "奥秘",
+    "Athletics": "运动",
+    "Deception": "欺瞒",
+    "History": "历史",
+    "Insight": "洞悉",
+    "Intimidation": "威吓",
+    "Investigation": "调查",
+    "Medicine": "医药",
+    "Nature": "自然",
+    "Perception": "察觉",
+    "Performance": "表演",
+    "Persuasion": "说服",
+    "Religion": "宗教",
+    "Sleight of Hand": "巧手",
+    "Stealth": "隐匿",
+    "Survival": "生存"
+  },
+  "skills": [
+    "Acrobatics",
+    "Animal Handling",
+    "Arcana",
+    "Athletics",
+    "Deception",
+    "History",
+    "Insight",
+    "Intimidation",
+    "Investigation",
+    "Medicine",
+    "Nature",
+    "Perception",
+    "Performance",
+    "Persuasion",
+    "Religion",
+    "Sleight of Hand",
+    "Stealth",
+    "Survival"
+  ],
+  "races": [
+    {
+      "id": "hill-dwarf",
+      "name": "丘陵矮人",
+      "group": "矮人",
+      "speed": 25,
+      "size": "中型",
+      "abilityBonuses": {
+        "constitution": 2,
+        "wisdom": 1
+      },
+      "traits": [
+        "黑暗视觉",
+        "矮人体魄",
+        "石工直觉"
+      ],
+      "languages": [
+        "通用语",
+        "矮人语"
+      ],
+      "fixedSkills": []
+    },
+    {
+      "id": "mountain-dwarf",
+      "name": "山地矮人",
+      "group": "矮人",
+      "speed": 25,
+      "size": "中型",
+      "abilityBonuses": {
+        "constitution": 2,
+        "strength": 2
+      },
+      "traits": [
+        "黑暗视觉",
+        "矮人体魄",
+        "石工直觉",
+        "矮人护甲训练"
+      ],
+      "languages": [
+        "通用语",
+        "矮人语"
+      ],
+      "fixedSkills": []
+    },
+    {
+      "id": "high-elf",
+      "name": "高等精灵",
+      "group": "精灵",
+      "speed": 30,
+      "size": "中型",
+      "abilityBonuses": {
+        "dexterity": 2,
+        "intelligence": 1
+      },
+      "traits": [
+        "黑暗视觉",
+        "精类血统",
+        "恍惚",
+        "敏锐感官"
+      ],
+      "languages": [
+        "通用语",
+        "精灵语"
+      ],
+      "fixedSkills": [
+        "Perception"
+      ]
+    },
+    {
+      "id": "wood-elf",
+      "name": "木精灵",
+      "group": "精灵",
+      "speed": 35,
+      "size": "中型",
+      "abilityBonuses": {
+        "dexterity": 2,
+        "wisdom": 1
+      },
+      "traits": [
+        "黑暗视觉",
+        "精类血统",
+        "恍惚",
+        "敏锐感官",
+        "荒野隐匿"
+      ],
+      "languages": [
+        "通用语",
+        "精灵语"
+      ],
+      "fixedSkills": [
+        "Perception"
+      ]
+    },
+    {
+      "id": "lightfoot-halfling",
+      "name": "轻足半身人",
+      "group": "半身人",
+      "speed": 25,
+      "size": "小型",
+      "abilityBonuses": {
+        "dexterity": 2,
+        "charisma": 1
+      },
+      "traits": [
+        "幸运",
+        "勇敢",
+        "半身人灵巧",
+        "天生隐匿"
+      ],
+      "languages": [
+        "通用语",
+        "半身人语"
+      ],
+      "fixedSkills": []
+    },
+    {
+      "id": "stout-halfling",
+      "name": "健壮半身人",
+      "group": "半身人",
+      "speed": 25,
+      "size": "小型",
+      "abilityBonuses": {
+        "dexterity": 2,
+        "constitution": 1
+      },
+      "traits": [
+        "幸运",
+        "勇敢",
+        "半身人灵巧",
+        "健壮韧性"
+      ],
+      "languages": [
+        "通用语",
+        "半身人语"
+      ],
+      "fixedSkills": []
+    },
+    {
+      "id": "human",
+      "name": "人类",
+      "group": "人类",
+      "speed": 30,
+      "size": "中型",
+      "abilityBonuses": {
+        "strength": 1,
+        "dexterity": 1,
+        "constitution": 1,
+        "intelligence": 1,
+        "wisdom": 1,
+        "charisma": 1
+      },
+      "traits": [
+        "多才多艺"
+      ],
+      "languages": [
+        "通用语",
+        "任选一种额外语言"
+      ],
+      "fixedSkills": []
+    },
+    {
+      "id": "dragonborn",
+      "name": "龙裔",
+      "group": "龙裔",
+      "speed": 30,
+      "size": "中型",
+      "abilityBonuses": {
+        "strength": 2,
+        "charisma": 1
+      },
+      "traits": [
+        "龙族先祖",
+        "吐息武器",
+        "伤害抗性"
+      ],
+      "languages": [
+        "通用语",
+        "龙语"
+      ],
+      "fixedSkills": []
+    },
+    {
+      "id": "forest-gnome",
+      "name": "森林侏儒",
+      "group": "侏儒",
+      "speed": 25,
+      "size": "小型",
+      "abilityBonuses": {
+        "intelligence": 2,
+        "dexterity": 1
+      },
+      "traits": [
+        "黑暗视觉",
+        "侏儒狡黠",
+        "天生幻术师",
+        "与小兽交流"
+      ],
+      "languages": [
+        "通用语",
+        "侏儒语"
+      ],
+      "fixedSkills": []
+    },
+    {
+      "id": "rock-gnome",
+      "name": "岩侏儒",
+      "group": "侏儒",
+      "speed": 25,
+      "size": "小型",
+      "abilityBonuses": {
+        "intelligence": 2,
+        "constitution": 1
+      },
+      "traits": [
+        "黑暗视觉",
+        "侏儒狡黠",
+        "工匠知识",
+        "发条匠"
+      ],
+      "languages": [
+        "通用语",
+        "侏儒语"
+      ],
+      "fixedSkills": []
+    },
+    {
+      "id": "half-elf",
+      "name": "半精灵",
+      "group": "半精灵",
+      "speed": 30,
+      "size": "中型",
+      "abilityBonuses": {
+        "charisma": 2
+      },
+      "bonusAbilityChoices": {
+        "count": 2,
+        "value": 1,
+        "exclude": [
+          "charisma"
+        ]
+      },
+      "traits": [
+        "黑暗视觉",
+        "精类血统",
+        "技能多才"
+      ],
+      "languages": [
+        "通用语",
+        "精灵语",
+        "任选一种额外语言"
+      ],
+      "fixedSkills": [],
+      "bonusSkillChoices": 2
+    },
+    {
+      "id": "half-orc",
+      "name": "半兽人",
+      "group": "半兽人",
+      "speed": 30,
+      "size": "中型",
+      "abilityBonuses": {
+        "strength": 2,
+        "constitution": 1
+      },
+      "traits": [
+        "黑暗视觉",
+        "威吓",
+        "顽强不屈",
+        "野蛮重击"
+      ],
+      "languages": [
+        "通用语",
+        "兽人语"
+      ],
+      "fixedSkills": [
+        "Intimidation"
+      ]
+    },
+    {
+      "id": "tiefling",
+      "name": "提夫林",
+      "group": "提夫林",
+      "speed": 30,
+      "size": "中型",
+      "abilityBonuses": {
+        "charisma": 2,
+        "intelligence": 1
+      },
+      "traits": [
+        "黑暗视觉",
+        "炼狱抗性",
+        "地狱传承"
+      ],
+      "languages": [
+        "通用语",
+        "炼狱语"
+      ],
+      "fixedSkills": []
+    }
+  ],
+  "classes": [
+    {
+      "id": "barbarian",
+      "name": "野蛮人",
+      "hitDie": 12,
+      "primaryAbilities": [
+        "strength",
+        "constitution"
+      ],
+      "savingThrows": [
+        "strength",
+        "constitution"
+      ],
+      "skillChoices": {
+        "count": 2,
+        "options": [
+          "Animal Handling",
+          "Athletics",
+          "Intimidation",
+          "Nature",
+          "Perception",
+          "Survival"
+        ]
+      },
+      "armorModel": "unarmored-barbarian",
+      "startingInventory": [
+        {
+          "name": "巨斧",
+          "quantity": 1
+        },
+        {
+          "name": "标枪",
+          "quantity": 4
+        },
+        {
+          "name": "探索者背包",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "bard",
+      "name": "吟游诗人",
+      "hitDie": 8,
+      "primaryAbilities": [
+        "charisma",
+        "dexterity"
+      ],
+      "savingThrows": [
+        "dexterity",
+        "charisma"
+      ],
+      "skillChoices": {
+        "count": 3,
+        "options": [
+          "Acrobatics",
+          "Animal Handling",
+          "Arcana",
+          "Athletics",
+          "Deception",
+          "History",
+          "Insight",
+          "Intimidation",
+          "Investigation",
+          "Medicine",
+          "Nature",
+          "Perception",
+          "Performance",
+          "Persuasion",
+          "Religion",
+          "Sleight of Hand",
+          "Stealth",
+          "Survival"
+        ]
+      },
+      "armorModel": "light-armor",
+      "startingInventory": [
+        {
+          "name": "细剑",
+          "quantity": 1
+        },
+        {
+          "name": "皮甲",
+          "quantity": 1
+        },
+        {
+          "name": "鲁特琴",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "cleric",
+      "name": "牧师",
+      "hitDie": 8,
+      "primaryAbilities": [
+        "wisdom",
+        "constitution"
+      ],
+      "savingThrows": [
+        "wisdom",
+        "charisma"
+      ],
+      "skillChoices": {
+        "count": 2,
+        "options": [
+          "History",
+          "Insight",
+          "Medicine",
+          "Persuasion",
+          "Religion"
+        ]
+      },
+      "armorModel": "medium-armor-shield",
+      "startingInventory": [
+        {
+          "name": "钉头锤",
+          "quantity": 1
+        },
+        {
+          "name": "盾牌",
+          "quantity": 1
+        },
+        {
+          "name": "圣徽",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "druid",
+      "name": "德鲁伊",
+      "hitDie": 8,
+      "primaryAbilities": [
+        "wisdom",
+        "constitution"
+      ],
+      "savingThrows": [
+        "intelligence",
+        "wisdom"
+      ],
+      "skillChoices": {
+        "count": 2,
+        "options": [
+          "Arcana",
+          "Animal Handling",
+          "Insight",
+          "Medicine",
+          "Nature",
+          "Perception",
+          "Religion",
+          "Survival"
+        ]
+      },
+      "armorModel": "medium-armor-wood-shield",
+      "startingInventory": [
+        {
+          "name": "木盾",
+          "quantity": 1
+        },
+        {
+          "name": "弯刀",
+          "quantity": 1
+        },
+        {
+          "name": "德鲁伊法器",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "fighter",
+      "name": "战士",
+      "hitDie": 10,
+      "primaryAbilities": [
+        "strength",
+        "constitution"
+      ],
+      "savingThrows": [
+        "strength",
+        "constitution"
+      ],
+      "skillChoices": {
+        "count": 2,
+        "options": [
+          "Acrobatics",
+          "Animal Handling",
+          "Athletics",
+          "History",
+          "Insight",
+          "Intimidation",
+          "Perception",
+          "Survival"
+        ]
+      },
+      "armorModel": "heavy-armor",
+      "startingInventory": [
+        {
+          "name": "锁子甲",
+          "quantity": 1
+        },
+        {
+          "name": "长剑",
+          "quantity": 1
+        },
+        {
+          "name": "盾牌",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "monk",
+      "name": "武僧",
+      "hitDie": 8,
+      "primaryAbilities": [
+        "dexterity",
+        "wisdom"
+      ],
+      "savingThrows": [
+        "strength",
+        "dexterity"
+      ],
+      "skillChoices": {
+        "count": 2,
+        "options": [
+          "Acrobatics",
+          "Athletics",
+          "History",
+          "Insight",
+          "Religion",
+          "Stealth"
+        ]
+      },
+      "armorModel": "unarmored-monk",
+      "startingInventory": [
+        {
+          "name": "短棍",
+          "quantity": 1
+        },
+        {
+          "name": "飞镖",
+          "quantity": 10
+        },
+        {
+          "name": "地下城探险者背包",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "paladin",
+      "name": "圣武士",
+      "hitDie": 10,
+      "primaryAbilities": [
+        "strength",
+        "charisma"
+      ],
+      "savingThrows": [
+        "wisdom",
+        "charisma"
+      ],
+      "skillChoices": {
+        "count": 2,
+        "options": [
+          "Athletics",
+          "Insight",
+          "Intimidation",
+          "Medicine",
+          "Persuasion",
+          "Religion"
+        ]
+      },
+      "armorModel": "heavy-armor",
+      "startingInventory": [
+        {
+          "name": "锁子甲",
+          "quantity": 1
+        },
+        {
+          "name": "长剑",
+          "quantity": 1
+        },
+        {
+          "name": "盾牌",
+          "quantity": 1
+        },
+        {
+          "name": "圣徽",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "ranger",
+      "name": "游侠",
+      "hitDie": 10,
+      "primaryAbilities": [
+        "dexterity",
+        "wisdom"
+      ],
+      "savingThrows": [
+        "strength",
+        "dexterity"
+      ],
+      "skillChoices": {
+        "count": 3,
+        "options": [
+          "Animal Handling",
+          "Athletics",
+          "Insight",
+          "Investigation",
+          "Nature",
+          "Perception",
+          "Stealth",
+          "Survival"
+        ]
+      },
+      "armorModel": "light-armor",
+      "startingInventory": [
+        {
+          "name": "长弓",
+          "quantity": 1
+        },
+        {
+          "name": "箭",
+          "quantity": 20
+        },
+        {
+          "name": "皮甲",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "rogue",
+      "name": "游荡者",
+      "hitDie": 8,
+      "primaryAbilities": [
+        "dexterity",
+        "intelligence"
+      ],
+      "savingThrows": [
+        "dexterity",
+        "intelligence"
+      ],
+      "skillChoices": {
+        "count": 4,
+        "options": [
+          "Acrobatics",
+          "Athletics",
+          "Deception",
+          "Insight",
+          "Intimidation",
+          "Investigation",
+          "Perception",
+          "Performance",
+          "Persuasion",
+          "Sleight of Hand",
+          "Stealth"
+        ]
+      },
+      "armorModel": "light-armor",
+      "startingInventory": [
+        {
+          "name": "细剑",
+          "quantity": 1
+        },
+        {
+          "name": "短弓",
+          "quantity": 1
+        },
+        {
+          "name": "箭",
+          "quantity": 20
+        },
+        {
+          "name": "盗贼工具",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "sorcerer",
+      "name": "术士",
+      "hitDie": 6,
+      "primaryAbilities": [
+        "charisma",
+        "constitution"
+      ],
+      "savingThrows": [
+        "constitution",
+        "charisma"
+      ],
+      "skillChoices": {
+        "count": 2,
+        "options": [
+          "Arcana",
+          "Deception",
+          "Insight",
+          "Intimidation",
+          "Persuasion",
+          "Religion"
+        ]
+      },
+      "armorModel": "no-armor",
+      "startingInventory": [
+        {
+          "name": "法器",
+          "quantity": 1
+        },
+        {
+          "name": "轻弩",
+          "quantity": 1
+        },
+        {
+          "name": "箭矢",
+          "quantity": 20
+        },
+        {
+          "name": "匕首",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "id": "warlock",
+      "name": "邪术师",
+      "hitDie": 8,
+      "primaryAbilities": [
+        "charisma",
+        "constitution"
+      ],
+      "savingThrows": [
+        "wisdom",
+        "charisma"
+      ],
+      "skillChoices": {
+        "count": 2,
+        "options": [
+          "Arcana",
+          "Deception",
+          "History",
+          "Intimidation",
+          "Investigation",
+          "Nature",
+          "Religion"
+        ]
+      },
+      "armorModel": "light-armor",
+      "startingInventory": [
+        {
+          "name": "皮甲",
+          "quantity": 1
+        },
+        {
+          "name": "轻弩",
+          "quantity": 1
+        },
+        {
+          "name": "箭矢",
+          "quantity": 20
+        },
+        {
+          "name": "奥术法器",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "wizard",
+      "name": "法师",
+      "hitDie": 6,
+      "primaryAbilities": [
+        "intelligence",
+        "constitution"
+      ],
+      "savingThrows": [
+        "intelligence",
+        "wisdom"
+      ],
+      "skillChoices": {
+        "count": 2,
+        "options": [
+          "Arcana",
+          "History",
+          "Insight",
+          "Investigation",
+          "Medicine",
+          "Religion"
+        ]
+      },
+      "armorModel": "no-armor",
+      "startingInventory": [
+        {
+          "name": "法术书",
+          "quantity": 1
+        },
+        {
+          "name": "法器",
+          "quantity": 1
+        },
+        {
+          "name": "匕首",
+          "quantity": 1
+        }
+      ]
+    }
+  ]
+}

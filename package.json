@@ -1,0 +1,17 @@
+{
+  "name": "ai-dnd-mvp",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev --workspace server\" \"npm run dev --workspace web\"",
+    "dev:web": "npm run dev --workspace web",
+    "dev:server": "npm run dev --workspace server",
+    "build": "npm run build --workspace server && npm run build --workspace web"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
