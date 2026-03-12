@@ -301,7 +301,8 @@ export async function runChat(params: {
   }
 
   // ── 可选追加变化轮：骰子开出后强制补写伤害/治疗等状态变更工具 ──────
-  if (shouldForceFollowUpMutation(userInput, toolCalls)) {
+  let missingRequiredTools = getMissingRequiredTools(userInput, toolCalls)
+  if (missingRequiredTools.length > 0) {
     const mutationPromptState = await getPromptState(params.sessionId)
     const followUpPass = await createCompletion(
       params.llmConfig,
@@ -311,7 +312,7 @@ export async function runChat(params: {
         { role: 'user', content: userInput },
         {
           role: 'user',
-          content: `本轮已经执行的工具结果 JSON：${JSON.stringify(executedToolResults)}。如果这些结果还不足以写回真实伤害、治疗、物品或状态变化，请现在只返回缺失的必要工具调用，不要输出任何叙事。`,
+          content: `本轮已经执行的工具结果 JSON：${JSON.stringify(executedToolResults)}。当前动作仍然缺少这些必要工具：${missingRequiredTools.join(', ')}。请只返回缺失的工具调用，不要输出任何叙事。`,
         },
       ],
       true,
@@ -331,6 +332,8 @@ export async function runChat(params: {
       await insertMessage(params.sessionId, 'tool', JSON.stringify(extraToolResult), extraToolCall.function.name)
       await params.onEvent({ event: 'tool', data: extraToolResult })
     }
+
+    missingRequiredTools = getMissingRequiredTools(userInput, toolCalls)
   }
 
   // ── 最终叙事：基于真实工具结果流式生成沉浸式文字 ─────────────────
@@ -348,7 +351,7 @@ export async function runChat(params: {
   const finalText = await streamCompletion(params.llmConfig, finalMessages, async () => { })
   let sanitizedFinalText = sanitizeNarrativeText(finalText || '四周归于死寂，只有你方才的举动还在空气里回荡。')
   // 若最终叙事仍包含未结算机械数值，触发一次改写（保险措施）
-  if (requiresToolResolution(sanitizedFinalText) && !hasStateMutationTool(toolCalls)) {
+  if (missingRequiredTools.length > 0 || (requiresToolResolution(sanitizedFinalText) && !hasStateMutationTool(toolCalls))) {
     sanitizedFinalText = sanitizeNarrativeText(
       await rewriteNarrativeWithoutMechanicalClaims(params.llmConfig, baseMessages, sanitizedFinalText),
     )
@@ -441,6 +444,36 @@ function shouldForceFollowUpMutation(userInput: string, toolCalls: ToolCall[]) {
  * 检测工具列表中是否包含写入状态的变化性工具。
  * 用于判断这一轮行动的最终和叙事是否已完整覆盖应有的数字变化。
  */
+function hasToolCall(toolCalls: ToolCall[], names: string[]) {
+  return toolCalls.some((toolCall) => names.includes(toolCall.function.name))
+}
+
+function getMissingRequiredTools(userInput: string, toolCalls: ToolCall[]) {
+  const missing: string[] = []
+  const needsCombatResolution = /(攻击|打自己|自残|伤害|砍|刺|挥刀|挥拳|射击|劈砍|捅|踢|撞击)/.test(userInput)
+  const needsHealingResolution = /(治疗|回血|回个血|治愈|恢复生命|喝药|药水|包扎)/.test(userInput)
+  const needsInventoryResolution = /(拾取|捡起|拿走|丢弃|丢下|消耗|使用药水|搜刮|购买|卖出|赠送|交出|拿出)/.test(userInput)
+  const needsNpcStateResolution = /(中毒|魅惑|灼烧|潮湿|流血|恐慌|束缚|震慑|好感|态度|敌意|友善)/.test(userInput)
+
+  if (needsCombatResolution && !hasToolCall(toolCalls, ['roll_dice'])) {
+    missing.push('roll_dice')
+  }
+
+  if ((needsCombatResolution || needsHealingResolution) && !hasToolCall(toolCalls, ['update_hp', 'update_npc_hp'])) {
+    missing.push('update_hp/update_npc_hp')
+  }
+
+  if ((needsHealingResolution || needsInventoryResolution) && !hasToolCall(toolCalls, ['update_inventory', 'update_npc_inventory'])) {
+    missing.push('update_inventory/update_npc_inventory')
+  }
+
+  if (needsNpcStateResolution && !hasToolCall(toolCalls, ['update_npc_status', 'update_npc_affinity', 'upsert_npc'])) {
+    missing.push('update_npc_status/update_npc_affinity')
+  }
+
+  return missing
+}
+
 function hasStateMutationTool(toolCalls: ToolCall[]) {
   return toolCalls.some((toolCall) => [
     'update_hp',
@@ -942,6 +975,3 @@ async function refreshSummary(sessionId: string, llmConfig: LlmConfig) {
     await pool.execute('UPDATE game_sessions SET story_summary = ? WHERE session_id = ?', [summary, sessionId])
   }
 }
-
-
-
